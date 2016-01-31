@@ -1,0 +1,29 @@
+{
+  "name": "banana_finance_tracker",
+  "version": "1.0.0",
+  "description": "- Bootstrap Express App w/index page - Set up MongoDB - consider using Mongoose - Front End - should probably use Angular. Ugh I miss Backbone. React looks cool. - Seed data - Bower components - Gulp tasks - setup, watch - Learn SASS right quick - Let's write some tests! Jasmine? Mochachai? WHO KNOWS maybe Protractor",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annarankin/banana_finance_tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annarankin/banana_finance_tracker/issues"
+  },
+  "homepage": "https://github.com/annarankin/banana_finance_tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "mongodb": "^2.1.4",
+    "passport": "^0.3.2"
+  }
+}

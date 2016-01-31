@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance Tracker</title>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/handlebars/handlebars.js"></script>
+  <script src="/bower_components/fullcalendar/dist/fullcalendar.js"></script>
+  <script src="/main.js"></script>
+</head>
+<body>
+  <h1>Finances</h1>
+  <h2>Because you're really good at procrastinating.</h2>
+
+    <div id="bills">
+      <script id="bill-template" type="x-template">
+      <p><strong>{{name}}</strong>: ${{amount}}, due on {{dueDate}}</p>
+      </script>
+    </div>
+
+    <form id="bill-form" action="/api/bills" method="POST">
+      <input type="hidden" name="_id" value="<%= user._id %>">
+      <input type="text" name="bill_name" placeholder="Name of bill">
+      <input type="number" name="amount" placeholder="Amount">
+      <input type="date" name="due_date" placeholder="Due Date">
+      <button id="new-bill">Submit New Bill</button>
+    </form>
+    <a href="/logout">Log out</a>
+
+</body>
+</html>
